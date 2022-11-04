@@ -1,0 +1,644 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, "Helvetica Neue", "Source Sans Variable";
+    background-color: #012B38;
+}
+
+.bg-light {
+    background-color: #09242B !important;
+}
+
+/* FontAwesome*/
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.form-control {
+    box-shadow: none;
+    border-radius: 4px;
+    border-color: #dfe3e8;
+}
+
+/* everything that has to do with the nav */
+.navbar {
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 5px solid #901818;
+    border-radius: 0;
+    margin-bottom: 2px;
+}
+
+.nav-link:hover {
+    color: #901818 !important;
+    cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* dropdown category's */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: #000000;
+    background-color: #19596C;
+    min-width: 160px;
+    border: solid 1px #901818;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar .navbar-nav a:hover, .navbar .navbar-nav a:focus {
+    color: #a83030 !important;
+}
+
+.navbar .form-inline .input-group-text {
+    box-shadow: none;
+    border-radius: 2px 0 0 2px;
+    background: #901818; /* login person*/
+    border-color: #ffffff;
+    font-size: 16px;
+}
+
+.navbar .form-inline i {
+    font-size: 16px;
+}
+
+.navbar .form-inline .btn {
+    border-radius: 2px;
+    color: #ffffff;
+    border-color: #ffffff;
+    background: #901818;
+    outline: none;
+}
+
+.navbar .form-inline .btn:hover, .navbar .form-inline .btn:focus {
+    border-color: #ffffff;
+    background: #901818; /* zoek icon & login hover */
+}
+
+.navbar .search-form {
+    display: inline-block;
+}
+
+.navbar .search-form .btn {
+    margin-left: 4px;
+}
+
+.btn-register {
+    margin-left: 4px;
+    color: #ffffff;
+    background-color: #09242B;
+    border: none;
+}
+
+.navbar .search-form .form-control {
+    border-radius: 2px;
+}
+
+.navbar .login-form .input-group {
+    margin-right: 4px;
+    float: left;
+}
+
+.navbar .login-form .form-control {
+    max-width: 158px;
+    border-radius: 0 2px 2px 0;
+    border-color: #901818;
+}
+
+.navbar .navbar-right .dropdown-toggle::after {
+    display: none;
+}
+
+.navbar .dropdown-menu {
+    font-size: 14px;
+    border-radius: 1px;
+    border-color: #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.navbar .dropdown-menu a {
+    padding: 6px 20px;
+}
+
+.navbar .login-dropdown .dropdown-menu {
+    width: 505px;
+    padding: 20px;
+    left: auto;
+    right: 0;
+    background-color: #19596C;
+    border-color: #901818;
+}
+
+.navbar .login-dropdown .dropdown-toggle::after {
+    display: none;
+}
+
+/* Home page divided in 3 columns  */
+.col-lang-4 {
+    color: #ffffff;
+    margin-top: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-color: #901818;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Style of the block with the titles of the programming languages */
+.titleBlock {
+    background-color: #19596C;
+    display: block;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+    border-radius: 3%;
+}
+
+/* style that p tags use in the home page */
+.textStyle {
+    background-color: #09242B;
+    height: fit-content;
+    min-height: 300px;
+    padding: 30px 20px;
+}
+
+/* style contact page */
+.contact-header {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col-contact-8 {
+    background-color: #19596C;
+    color: #ffffff;
+    text-align: center;
+    border-right: 1px solid #901818;
+    padding: 20px 10px;
+}
+
+.col-contact-4 {
+    background-color: #09242B;
+    color: #ffffff;
+    text-align: left;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+/* style video page */
+.video-header {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.col-video-7 {
+    margin-top: 30px;
+}
+
+.col-video-3 {
+    background-color: #09242B;
+    color: #ffffff;
+    width: 100%;
+    height: 250px;
+    min-height: 480px;
+    margin-top: 30px;
+    margin-left: 20px;
+    text-align: center;
+    overflow: auto;
+}
+
+/* profile page button on the nav */
+.link-button {
+    background: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15%;
+}
+
+/* style profile page */
+.emp-profile {
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    border-radius: 0.5rem;
+    background-color: #19596c;
+    color: #ffffff;
+}
+
+.profile-head h5 {
+    color: #ffffff;
+}
+
+.profile-head .nav-tabs {
+    margin-bottom: 5%;
+}
+
+.profile-head .nav-tabs .nav-link {
+    font-weight: 600;
+    border: none;
+}
+
+.profile-tab label {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.profile-tab p {
+    color: #ffffff;
+}
+
+/* style footer // small for the copyright*/
+#footer {
+    padding-top: 5%;
+    margin-left: 11.5%;
+    margin-right: 11.5%;
+    border-bottom: 10px solid #901818;
+}
+
+.small {
+    color: #ffffff;
+}
+
+/* Aanmeld Css */
+.aanmeld-body {
+    margin: 0px;
+    padding: 0px;
+    font-family: arial;
+}
+
+.aanmeld-container {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.aanmeld-inputs {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.aanmeld-inputs h1 {
+    color: #fff;
+    font-size: 3rem;
+    letter-spacing: 3px;
+    margin: 10px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    font-family: arial;
+}
+
+.aanmeld-inputs form {
+    background-color: #23243c;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aanmeld-inputs form input {
+    margin: 10px;
+    width: 250px;
+    height: 30px;
+    background-color: #434459;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 5px 10px;
+}
+
+.aanmeld-inputs form input::placeholder {
+    color: #727383;
+}
+
+/* Aanmeld Css / Button */
+
+.aanmeld-inputs form button {
+    text-transform: uppercase;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-weight: 600;
+    background-color: #3b70e0;
+    color: #fff;
+    font-size: 12px;
+    font-family: arial;
+    letter-spacing: 1px;
+}
+
+.aanmeld-inputs form button:hover {
+    background-color: rgb(125, 49, 247);
+    transition: all ease 0.3s;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #09242B;
+    margin: auto;
+    padding: 20px;
+    width: 130%;
+    height: auto;
+}
+
+.video-button {
+    width: 100%;
+    overflow: auto;
+    background-color: #09242B;
+    color: #ffffff;
+    border: none;
+    text-align: left;
+}
+
+
+/* The Close Button */
+.close {
+    color: #ffffff;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal title - PHP */
+.modal-title {
+    color: #dfe3e8;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+/* Modal footer */
+.modal-footer {
+    border-top: none;
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+/* Modal Tutorial text */
+.modal-body {
+    color: #ffffff;
+}
+
+/* Modal content */
+.list-group-item {
+    margin-top: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: grey 1px solid;
+}
+
+/* Video container */
+.post-container {
+    margin: 20px 20px 0 0;
+    border-bottom: grey 1px solid;
+    margin-top: 10px;
+    overflow: auto;
+    padding: 20px;
+}
+
+/* Thumbnails video */
+.post-thumb {
+    float: left;
+    max-width: 50%;
+    max-height: 50%;
+    display: inline;
+    width: 200px;
+    height: 100px;
+}
+
+.post-thumb img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    display: inline;
+}
+
+/* title position */
+.post-content {
+    margin-left: 20px;
+    display: inline;
+    line-height: 0px;
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 140%;
+    display: inline;
+    line-height: 60px;
+}
+
+/* Video ep number */
+.vid-number {
+    text-align: left;
+    display: inline;
+    margin-right: 20px;
+}
+
+/* video Description */
+.des-content {
+    color: #a2b1be;
+    margin-left: 220px;
+}
+
+/* video verwijderen select */
+.verselect {
+    min-width: 50px;
+}
+
+/* video verwijderen label */
+.aanmeld-inputs form label {
+    margin: 10px;
+    width: 250px;
+    height: 30px;
+    background-color: #434459;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #727383;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+/* Text area video bewerken en toevoegen */
+
+.beschrijving {
+    margin: 10px;
+    width: 250px;
+    min-height: 100px;
+    background-color: #434459;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #727383;
+    padding: 5px 10px;
+}
+
+/* label video bewerken en toevoegen */
+
+.none {
+    display: none;
+}
+
+/* form select video bewerken, aanmelden en toevoegen  */
+
+.aanmeld-inputs form select {
+    margin: 10px;
+    width: 250px;
+    height: 30px;
+    background-color: #434459;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: #727383;
+    padding: 5px 10px;
+}
+
+/* Main recente videos */
+
+.mainh1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.video-header1 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+.col-video-main {
+    margin: 10px 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+    background-color: #09242B;
+}
+
+.t-a-c {
+    text-align: center;
+}
+
+.beschrijving-kort{
+    height: 66px;
+    overflow: hidden;
+}
+
+.welkom{
+    padding-top: 20px;
+    color: white;
+}
+
+.card-color{
+    background-color: #09242b;
+    color: white;
+}
+
+.comment-margin{
+    margin-top: 100px;
+}
+
+.btn{
+    text-transform: uppercase;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    font-weight: 600;
+    background-color: #3b70e0;
+    color: #fff;
+    font-size: 12px;
+    font-family: arial;
+    letter-spacing: 1px;
+}
+
+/*media style used for responsive pages*/
+@media (min-width: 1200px) {
+    .search-form .input-group {
+        width: 300px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .dropdown-menu {
+        width: 100%;
+        background: transparent;
+        padding: 10px 20px;
+    }
+
+    .navbar .input-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .navbar .input-group .form-control {
+        max-width: none;
+    }
+
+    .navbar .login-form .btn {
+        width: 100%;
+    }
+}
